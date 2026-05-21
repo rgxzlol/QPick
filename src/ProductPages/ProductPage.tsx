@@ -5,7 +5,7 @@ import images from '../data/images'
 import { useTranslation } from 'react-i18next'
 
 const ProductPage = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const { id } = useParams()
   const product = getProductById(Number(id))
 
