@@ -1,0 +1,38 @@
+{
+  "header": {
+    "choosePhone": "Выбрать модель телефона"
+  },
+  "footer": {
+    "favorites": "Избранное",
+    "cart": "Корзина",
+    "contacts": "Контакты",
+    "terms": "Условия сервиса",
+    "lang": {
+      "kk": "Каз",
+      "ru": "Рус",
+      "en": "Eng"
+    }
+  },
+  "main": {
+    "accessoriesTitle": "Аксессуары для",
+    "accessoriesModel": "Iphone 13 Pro Max",
+    "cases": "Чехлы",
+    "glass": "Стеклянные",
+    "silicone": "Силиконовые",
+    "leather": "Кожаные",
+    "headphones": "Наушники",
+    "wirelessHeadphones": "Беспроводные наушники"
+  },
+  "cases": {
+    "back": "В каталог",
+    "placeholder": "Здесь скоро появятся чехлы этой категории",
+    "notFound": "Категория не найдена"
+  },
+  "product": {
+    "back": "В каталог",
+    "placeholder": "Здесь скоро появится этот товар",
+    "notFound": "Товар не найден",
+    "buy": "Купить",
+    "addToCart": "Добавить в корзину"
+  }
+}

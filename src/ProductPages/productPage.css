@@ -1,0 +1,109 @@
+.product-page {
+    display: flex;
+    align-items: start;
+    height: 80dvh;
+    position: relative;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.product-page__not-found {
+    font-weight: 600;
+    font-size: 20px;
+    color: #1c1c27;
+    order: 1;
+}
+
+.product-page-button {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    background: #101010;
+    color: #fff;
+    padding: 13px 85px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.product-box {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 40px 20px 40px;
+
+    position: relative;
+}
+
+.product-page__title {
+    font-weight: 600;
+    font-size: 25px;
+    color: #1c1c27;
+    margin-top: 38px;
+}
+
+.product-page-button__back {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+.product-page__price {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-page__price-value {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    color: #df6464;
+}
+
+.product-page__old-price {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #aaa;
+    text-decoration: line-through;
+    text-decoration-color: #df6464;
+}
+
+.product-page__sale {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #df6464;
+}
+
+.product-buy {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    white-space: nowrap;
+}
+
+.product-other {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 23px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    color: #1c1c27;
+}
+
+.product-page-button--cart {
+    display: flex;
+    align-items: center;
+gap: 5px;
+}

@@ -1,0 +1,49 @@
+.cases-page {
+    margin-top: 22px;
+    padding: 30px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cases-page__back {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 17px;
+    color: #838383;
+    text-decoration: none;
+}
+
+.cases-page__back:hover {
+    color: #ffa542;
+}
+
+.cases-page__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.cases-page__preview {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cases-page__title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1c1c27;
+}
+
+.cases-page__hint {
+    font-size: 17px;
+    color: #838383;
+    margin-bottom: 30px;
+}
+
+.cases-page__grid {
+    min-height: 200px;
+}

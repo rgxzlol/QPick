@@ -1,0 +1,38 @@
+{
+  "header": {
+    "choosePhone": "Choose phone model"
+  },
+  "footer": {
+    "favorites": "Favorites",
+    "cart": "Cart",
+    "contacts": "Contacts",
+    "terms": "Terms of service",
+    "lang": {
+      "kk": "Kaz",
+      "ru": "Rus",
+      "en": "Eng"
+    }
+  },
+  "main": {
+    "accessoriesTitle": "Accessories for",
+    "accessoriesModel": "Iphone 13 Pro Max",
+    "cases": "Cases",
+    "glass": "Glass",
+    "silicone": "Silicone",
+    "leather": "Leather",
+    "headphones": "Headphones",
+    "wirelessHeadphones": "Wireless headphones"
+  },
+  "cases": {
+    "back": "Back to catalog",
+    "placeholder": "Cases in this category will appear here soon",
+    "notFound": "Category not found"
+  },
+  "product": {
+    "back": "Back to catalog",
+    "placeholder": "This product will appear here soon",
+    "notFound": "Product not found",
+    "buy": "Buy",
+    "addToCart": "Add to cart"
+  }
+}

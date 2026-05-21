@@ -1,0 +1,38 @@
+{
+  "header": {
+    "choosePhone": "Телефон моделін таңдау"
+  },
+  "footer": {
+    "favorites": "Таңдаулылар",
+    "cart": "Себет",
+    "contacts": "Байланыс",
+    "terms": "Қызмет шарттары",
+    "lang": {
+      "kk": "Каз",
+      "ru": "Рус",
+      "en": "Eng"
+    }
+  },
+  "main": {
+    "accessoriesTitle": "Аксессуарлар",
+    "accessoriesModel": "Iphone 13 Pro Max",
+    "cases": "Қаптамалар",
+    "glass": "Шыны",
+    "silicone": "Силиконды",
+    "leather": "Былғары",
+    "headphones": "Құлаққаптар",
+    "wirelessHeadphones": "Сымсыз құлаққаптар"
+  },
+  "cases": {
+    "back": "Каталогқа қайту",
+    "placeholder": "Осы санаттағы қаптамалар жақында осында пайда болады",
+    "notFound": "Санат табылмады"
+  },
+  "product": {
+    "back": "Каталогқа қайту",
+    "placeholder": "Бұл өнім жақында осында пайда болады",
+    "notFound": "Өнім табылмады",
+    "buy": "Сатып алу",
+    "addToCart": "Себетке қосу"
+  }
+}
