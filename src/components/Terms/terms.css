@@ -1,0 +1,26 @@
+.terms__box {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 30px;
+    padding: 15px 32px 27px 30px;
+}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    margin: 41px auto 82px auto;
+}
+
+.terms__title {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1c1c27;
+    margin-bottom: 15px;
+}
+
+.terms__content {
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+}

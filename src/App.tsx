@@ -1,9 +1,10 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
-
 import Header from './components/Header/Header'
 import CatalogConstructor from './Constructor/CatalogConstructor'
 import ProductPage from './ProductPages/ProductPage'
 import CasesPage from './pages/CasesPage/CasesPage'
+import Terms from './components/Terms/Terms'
+import Contacts from './components/Contacts/Contacts'
 
 const App = () => {
   return (
@@ -26,6 +27,22 @@ const App = () => {
             path='/cases/:type'
             element={<CasesPage />}
           />
+          
+          <Route
+            path='/terms'
+            element={<Terms />}
+          />
+          
+          <Route
+            path='/contacts'
+            element={<Contacts />}
+          />
+
+          <Route
+            path='/'
+            element={<CatalogConstructor />}
+          />
+
         </Routes>
       </div>
     </HashRouter>

@@ -1,0 +1,73 @@
+.contacts__box {
+    display: flex;
+    gap: 60px;
+}
+
+.contacts-geo {
+    border-radius: 10px;
+    border: none;
+}
+
+.contacts__geo-box {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 30px;
+    padding: 15px 20px 27px 20px;
+}
+
+.contacts {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1c1c27;
+    margin-bottom: 20px;
+    margin-top: 27px;
+}
+
+.contacts__geo__box-little {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__geo {
+    font-weight: 500;
+    font-size: 15px;
+    color: #000;
+}
+
+.contacts__geo-little {
+    font-weight: 500;
+    font-size: 13px;
+    color: #838383;
+}
+
+.contacts__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contacts__socials-marker {
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 30px;
+}
+
+.contacts__box-geo {
+    display: flex;
+    gap: 12px;
+    margin-top: 13px;
+}
+
+.contacts__phone-box {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 45px auto;
+
+}
+
+.socials__phone {
+    font-weight: 600;
+    font-size: 25px;
+}

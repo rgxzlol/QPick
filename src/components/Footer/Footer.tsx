@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './footer.css'
 import images from '../../data/images'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const { t, i18n } = useTranslation()
@@ -17,14 +18,20 @@ const Footer = () => {
 
     return (
         <div className='footer'>
-            <h2 className="logo footer__logo">QPick</h2>
+            <Link to="/" className="logo footer__logo">
+                QPick
+            </Link>
             <ul className="footer__menu">
                 <li><a href="" className="footer__menu-link">{t('footer.favorites')}</a></li>
                 <li><a href="" className="footer__menu-link">{t('footer.cart')}</a></li>
-                <li><a href="" className="footer__menu-link">{t('footer.contacts')}</a></li>
+                <li><Link to="/contacts" className="footer__menu-link">
+                    {t('footer.contacts')}
+                </Link></li>
             </ul>
             <div className="footer__box">
-                <span className="footer-text">{t('footer.terms')}</span>
+                <Link to="/terms" className="footer-text">
+                    {t('footer.terms')}
+                </Link>
                 <div className="footer-lilBox">
                     <img src={images.lang} alt="Language" />
                     <ul className="footer__langMenu">

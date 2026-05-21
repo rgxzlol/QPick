@@ -3,6 +3,7 @@ import { getProductById, formatProductOldPrice, formatProductPrice } from '../da
 import './productPage.css'
 import images from '../data/images'
 import { useTranslation } from 'react-i18next'
+import Footer from '../components/Footer/Footer'
 
 const ProductPage = () => {
   const { t } = useTranslation()
@@ -21,7 +22,7 @@ const ProductPage = () => {
   const oldPrice = formatProductOldPrice(product)
 
   return (
-    <div className="product-page">
+    <><div className="product-page">
       <Link to="/" className="product-page-button product-page-button__back">← {t('product.back')}</Link>
       <div className="product-box">
         <img className="product-page__image" src={product.image} alt={product.name} />
@@ -51,7 +52,7 @@ const ProductPage = () => {
           <p className="product-page__description">{product.description}</p>
         )}
       </div>
-    </div>
+    </div><Footer /></>
   )
 }
 

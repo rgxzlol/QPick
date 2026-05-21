@@ -105,5 +105,9 @@
 .product-page-button--cart {
     display: flex;
     align-items: center;
-gap: 5px;
+    gap: 5px;
+}
+
+.product-page {
+    margin-bottom: 30px;
 }

@@ -19,6 +19,8 @@ import apple from '../assets/img/apple icon.svg'
 import wirreles1 from '../assets/img/7.jpg'
 import wirreles2 from '../assets/img/8.jpg'
 import wirreles3 from '../assets/img/9.jpg'
+import geo from '../assets/img/geo.svg'
+import phoneMark from '../assets/img/phoneMark.svg'
 
 const images = {
     phone,
@@ -41,7 +43,9 @@ const images = {
     apple,
     wirreles1,
     wirreles2,
-    wirreles3
+    wirreles3,
+    geo,
+    phoneMark
 }
 
 export default images

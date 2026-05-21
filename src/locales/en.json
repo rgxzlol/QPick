@@ -34,5 +34,13 @@
     "notFound": "Product not found",
     "buy": "Buy",
     "addToCart": "Add to cart"
+  },
+  "terms": {
+    "conditions": "Terms of service",
+    "conditionsContent": "The organization’s task, especially the course for a socially oriented national project, requires us to systematically analyze the development model! Thus, the constant information and technical support of our activities requires us to analyze the system of large-scale changes in a number of parameters! On the other hand, socio-economic development directly depends on comprehensively balanced innovations?",
+    "delivery": "Delivery terms",
+    "deliveryContent": "The organization’s task, especially the course for a socially oriented national project, requires us to systematically analyze the development model! Thus, the constant information and technical support of our activities requires us to analyze the system of large-scale changes in a number of parameters! On the other hand, socio-economic development directly depends on comprehensively balanced innovations?",
+    "return": "Return terms",
+    "returnContent": "The organization’s task, especially the course for a socially oriented national project, requires us to systematically analyze the development model! Thus, the constant information and technical support of our activities requires us to analyze the system of large-scale changes in a number of parameters! On the other hand, socio-economic development directly depends on comprehensively balanced innovations?"
   }
 }
