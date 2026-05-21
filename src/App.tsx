@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './components/Header/Header'
 import CatalogConstructor from './Constructor/CatalogConstructor'
@@ -7,7 +7,7 @@ import CasesPage from './pages/CasesPage/CasesPage'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='container'>
         <Header />
 
@@ -28,7 +28,7 @@ const App = () => {
           />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
