@@ -4,10 +4,12 @@ import './productPage.css'
 import images from '../data/images'
 import { useTranslation } from 'react-i18next'
 import Footer from '../components/Footer/Footer'
+import { useCart } from '../context/CartContext'
 
 const ProductPage = () => {
   const { t } = useTranslation()
   const { id } = useParams()
+  const { addToCart } = useCart()
   const product = getProductById(Number(id))
 
   if (!product) {
@@ -41,7 +43,13 @@ const ProductPage = () => {
       </div>
       <div className="product-buy">
         <button className="product-page-button">{t('product.buy')}</button>
-        <button className="product-page-button product-page-button--cart"><img src={images.cart} alt="" /> {t('product.addToCart')}</button>
+        <button
+          type="button"
+          className="product-page-button product-page-button--cart"
+          onClick={() => product && addToCart(product)}
+        >
+          <img src={images.cart} alt="" /> {t('product.addToCart')}
+        </button>
       </div>
       <div className="product-other">
 

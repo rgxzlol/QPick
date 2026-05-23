@@ -21,6 +21,11 @@ import wirreles2 from '../assets/img/8.jpg'
 import wirreles3 from '../assets/img/9.jpg'
 import geo from '../assets/img/geo.svg'
 import phoneMark from '../assets/img/phoneMark.svg'
+import cartDelete from '../assets/img/delete.svg'
+import delivery from '../assets/img/delevery.svg'
+import plus from '../assets/img/plus.svg'
+import minus from '../assets/img/minus.svg'
+import nullCart from '../assets/img/nullCart.svg'
 
 const images = {
     phone,
@@ -45,7 +50,12 @@ const images = {
     wirreles2,
     wirreles3,
     geo,
-    phoneMark
+    phoneMark,
+    cartDelete,
+    delivery,
+    plus,
+    minus,
+    nullCart
 }
 
 export default images

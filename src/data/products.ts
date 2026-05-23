@@ -19,8 +19,14 @@ export type Product = {
 const formatPrice = (value: number, currency: 'tenge' | 'kzt' = 'tenge') =>
   currency === 'kzt' ? `${value} KZT` : `${value} ₸`
 
+export const formatPriceValue = (value: number, currency: 'tenge' | 'kzt' = 'tenge') =>
+  formatPrice(value, currency)
+
 export const formatProductPrice = (product: Product) =>
   formatPrice(product.price ?? 0, product.currency)
+
+export const formatProductLineTotal = (product: Product, quantity: number) =>
+  formatPrice((product.price ?? 0) * quantity, product.currency)
 
 export const formatProductOldPrice = (product: Product) =>
   product.oldPrice != null ? formatPrice(product.oldPrice, product.currency) : null

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import './header.css'
 import images from '../../data/images'
+import { useCart } from '../../context/CartContext'
 
 const phoneModels = [
   'iPhone 12',
@@ -29,6 +30,7 @@ type Brand = (typeof brands)[number]
 
 const Header = () => {
   const { t } = useTranslation()
+  const { totalCount } = useCart()
 
   const [activeMenu, setActiveMenu] = useState<Brand | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -81,9 +83,8 @@ const Header = () => {
         <div className="header__phone-selector" ref={selectorRef}>
           <button
             type="button"
-            className={`header__label ${
-              menuOpen ? 'header__label--open' : ''
-            }`}
+            className={`header__label ${menuOpen ? 'header__label--open' : ''
+              }`}
             onClick={toggleMenuOpen}
           >
             <img className="header__phone" src={images.phone} alt="" />
@@ -99,19 +100,17 @@ const Header = () => {
                 <button
                   type="button"
                   onClick={(e) => toggleBrand(e, brand)}
-                  className={`menu-apple__title ${
-                    activeMenu === brand ? 'active' : ''
-                  }`}
+                  className={`menu-apple__title ${activeMenu === brand ? 'active' : ''
+                    }`}
                 >
                   {brand}
                 </button>
 
                 <ul
-                  className={`menu-apple__list ${
-                    activeMenu === brand
+                  className={`menu-apple__list ${activeMenu === brand
                       ? 'menu-apple__list--open'
                       : ''
-                  }`}
+                    }`}
                 >
                   {phoneModels.map((model) => (
                     <li key={model}>
@@ -135,9 +134,13 @@ const Header = () => {
         </div>
 
         <div className="header__cart_box">
-          <img className="header__cart" src={images.cart} alt="" />
+          <Link to="/cart">
+            <img className="header__cart" src={images.cart} alt="" />
+          </Link>
 
-          <span className="header__cart-count">0</span>
+          {totalCount > 0 && (
+            <span className="header__cart-count">{totalCount}</span>
+          )}
         </div>
       </div>
     </div>
