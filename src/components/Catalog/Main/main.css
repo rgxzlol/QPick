@@ -82,6 +82,14 @@
     left: 20px;
 }
 
+.catalog-button img {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.catalog-button:active img {
+    transform: scale(0.9);
+}
+
 .catalog-card {
     position: relative;
 }

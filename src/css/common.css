@@ -36,8 +36,14 @@ button {
     font-weight: 700;
     font-size: 25px;
     color: #101010;
+    text-shadow: 0 0 10px white;
 }
 
 .active {
     color: #ffa542;
+}
+
+input {
+    border: none;
+    outline: none;
 }

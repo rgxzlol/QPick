@@ -103,7 +103,7 @@ const Cart = () => {
             <p className="cart__total-price-title">{t('cart.total')}</p>
             <p className="cart__total-price-value">{formatPriceValue(grandTotal)}</p>
           </div>
-          <button type="button" className="cart__total-price-btn">{t('cart.buy')}</button>
+          <Link to='/registration' type="button" className="cart__total-price-btn">{t('cart.buy')}</Link>
         </div>
       </div>
       <Footer />

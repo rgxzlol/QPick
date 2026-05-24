@@ -4,11 +4,14 @@ import './i18n'
 import './css/main.css'
 import App from './App.tsx'
 import { CartProvider } from './context/CartContext'
+import { FavoritesProvider } from './context/FavoritesContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <CartProvider>
-      <App />
+      <FavoritesProvider>
+        <App />
+      </FavoritesProvider>
     </CartProvider>
   </StrictMode>,
 )

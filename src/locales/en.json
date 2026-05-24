@@ -43,6 +43,12 @@
     "return": "Return terms",
     "returnContent": "The organization’s task, especially the course for a socially oriented national project, requires us to systematically analyze the development model! Thus, the constant information and technical support of our activities requires us to analyze the system of large-scale changes in a number of parameters! On the other hand, socio-economic development directly depends on comprehensively balanced innovations?"
   },
+  "favorites": {
+    "title": "Favorites",
+    "emptyTitle": "No favorites yet",
+    "emptyDesc": "Tap the heart on products in the catalog to add them here",
+    "emptyBtn": "Go to catalog"
+  },
   "cart": {
     "cart": "Cart",
     "delivery": "Delivery",

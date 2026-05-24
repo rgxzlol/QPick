@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import images from '../../data/images'
 import { useCart } from '../../context/CartContext'
+import { useFavorites } from '../../context/FavoritesContext'
 
 const phoneModels = [
   'iPhone 12',
@@ -31,6 +32,7 @@ type Brand = (typeof brands)[number]
 const Header = () => {
   const { t } = useTranslation()
   const { totalCount } = useCart()
+  const { totalCount: favoritesCount } = useFavorites()
 
   const [activeMenu, setActiveMenu] = useState<Brand | null>(null)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -108,8 +110,8 @@ const Header = () => {
 
                 <ul
                   className={`menu-apple__list ${activeMenu === brand
-                      ? 'menu-apple__list--open'
-                      : ''
+                    ? 'menu-apple__list--open'
+                    : ''
                     }`}
                 >
                   {phoneModels.map((model) => (
@@ -128,9 +130,13 @@ const Header = () => {
 
       <div className="header__box">
         <div className="header__heart_box">
-          <img className="header__heart" src={images.heart} alt="" />
+          <Link to='/favorite'>
+            <img className="header__heart" src={images.heart} alt="" />
+          </Link>
 
-          <span className="header__heart-count">0</span>
+          {favoritesCount > 0 && (
+            <span className="header__heart-count">{favoritesCount}</span>
+          )}
         </div>
 
         <div className="header__cart_box">

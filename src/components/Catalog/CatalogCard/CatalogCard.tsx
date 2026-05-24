@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom'
 import type { Product } from '../../../data/products'
 import { formatProductOldPrice, formatProductPrice } from '../../../data/products'
 import images from '../../../data/images'
+import { useFavorites } from '../../../context/FavoritesContext'
 
 type CatalogCardProps = {
   product: Product
 }
 
 const CatalogCard = ({ product }: CatalogCardProps) => {
+  const { isFavorite, toggleFavorite } = useFavorites()
+  const favorited = isFavorite(product.id)
+
   const handleFavoriteClick = (e: MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
+    toggleFavorite(product.id)
   }
 
   const oldPrice = formatProductOldPrice(product)
@@ -23,7 +28,10 @@ const CatalogCard = ({ product }: CatalogCardProps) => {
         className="catalog-button"
         onClick={handleFavoriteClick}
       >
-        <img src={images.favorite} alt="" />
+        <img
+          src={favorited ? images.favoriteAddction : images.favorite}
+          alt=""
+        />
       </button>
       {product.showApple && (
         <button

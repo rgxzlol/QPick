@@ -26,6 +26,9 @@ import delivery from '../assets/img/delevery.svg'
 import plus from '../assets/img/plus.svg'
 import minus from '../assets/img/minus.svg'
 import nullCart from '../assets/img/nullCart.svg'
+import pen from '../assets/img/pen.svg'
+import visa from '../assets/img/visa.svg'
+import promo from '../assets/img/promo.svg'
 
 const images = {
     phone,
@@ -55,7 +58,10 @@ const images = {
     delivery,
     plus,
     minus,
-    nullCart
+    nullCart,
+    pen,
+    visa,
+    promo
 }
 
 export default images
