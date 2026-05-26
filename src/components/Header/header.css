@@ -1,19 +1,33 @@
 .header {
     position: sticky;
-    top: 0;
+    top: 10px;
     z-index: 200;
-    padding: 15px 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #eaeaea;
-    background: rgba(255, 255, 255, 0.1);
+
+    padding: 20px;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.15);
+
+    /* Blur */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    /* Border */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    /* Shadow */
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+
     border-radius: 20px;
-    padding: 20px;
+
+    /* Чтобы blur работал стабильнее */
+    overflow: hidden;
 }
 
 .header__label {
@@ -37,6 +51,11 @@
 
 .header__phone-selector {
     position: relative;
+}
+
+.header__choose {
+    text-shadow: 0 0 10px white;
+
 }
 
 .header__choose::after {
