@@ -1,0 +1,36 @@
+@media (max-width: 992px) {
+    .register__box {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .register-btn {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .register__info-geo {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .contacts-geo {
+        max-width: 400px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacts-geo {
+        max-width: 300px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts-geo {
+        max-width: 200px !important;
+    }
+    .register__info-price {
+        top: 40px !important;
+    }
+}

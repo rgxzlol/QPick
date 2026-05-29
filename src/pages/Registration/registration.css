@@ -33,7 +33,7 @@
     margin-right: 15px;
     padding: 23px 31px 32px 38px;
     position: relative;
-    max-height: 570px;
+    max-height: 650px;
 }
 
 .div2 {
@@ -64,6 +64,11 @@
     margin-bottom: 20px;
 }
 
+.register__geo-box {
+    width: 460px;
+    height: 200px;
+}
+
 .register__info-price {
     position: absolute;
     top: 23px;
@@ -87,8 +92,22 @@
     cursor: pointer;
 }
 
-.register__info-input {
-    background: #d6d6d6;
+.register__info-input,
+.register__info-phone,
+.register-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font: inherit;
+    color: #101010;
+    min-width: 0;
+}
+
+.register__info-input::placeholder,
+.register__info-phone::placeholder,
+.register-input::placeholder {
+    color: #838383;
 }
 
 .register__info-geo {
@@ -120,14 +139,66 @@
     grid-area: 4 / 1 / 5 / 2;
 }
 
+.register-order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 130px;
+    overflow-y: auto;
+}
+
 .register__info-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.register-info {
+    flex: 1;
+    font-size: 15px;
+    color: #1c1c27;
+}
+
+.register-count {
+    font-weight: 600;
+    font-size: 15px;
+    min-width: 28px;
+}
+
+.register-price {
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffa542;
+    white-space: nowrap;
 }
 
 .register__info-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.register__info-label {
+    font-size: 15px;
+    color: #838383;
+}
+
+.register__info-label--total {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1c1c27;
+}
+
+.register__info-value {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1c1c27;
+}
+
+.register__info-value--total {
+    font-size: 17px;
+    color: #ffa542;
 }
 
 .register__delivery-box {
@@ -149,10 +220,6 @@
     padding-left: 5px;
 }
 
-.register__info-phone {
-    background: #d6d6d6;
-}
-
 .input-dop {
     margin-top: 20px;
 }
@@ -167,4 +234,31 @@
     font-weight: 500;
     font-size: 15px;
     text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.register__error {
+    color: #df6464;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.register--success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.register__success-text {
+    font-size: 17px;
+    color: #838383;
+    margin: 16px 0 30px;
+    max-width: 400px;
+}
+
+.register--success .register-btn {
+    max-width: 320px;
 }

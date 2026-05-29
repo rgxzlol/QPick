@@ -27,7 +27,7 @@ const Cart = () => {
     <>
       <div className="cart">
         <div className="cart__box">
-          <h6 className="cart__title">{t('cart.cart')}</h6>
+          <h6 className="cart__title cart__title--desktop">{t('cart.cart')}</h6>
 
           <div className="cart__items">
             {items.map((item) => {
@@ -79,31 +79,35 @@ const Cart = () => {
           </div>
 
           <div className="cart__box-delivery">
-            <h6 className="cart__box-delivery-title">{t('cart.delivery')}</h6>
-            <iframe
-              className="contacts-geo"
-              title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d745.6135191967844!2d76.8261876758054!3d43.2333391416845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369df5639b2e7%3A0x72569966113f4d7d!2z0LzQuNC60YDQvtGA0LDQudC-0L0g0JDQutGB0LDQuS0z0JAgNjLQsCwg0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2s!4v1779356148575!5m2!1sru!2s"
-              width="584"
-              height="173"
-              loading="lazy"
-            />
+            <h6 className="cart__box-delivery-title">
+              <span>{t('cart.delivery')}</span>
+              <span className="cart__box-delivery-price">{formatPriceValue(deliveryFee)}</span>
+            </h6>
+            <div className="cart__geo-box">
+              <iframe
+                className="contacts-geo cart__geo"
+                title="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d745.6135191967844!2d76.8261876758054!3d43.2333391416845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369df5639b2e7%3A0x72569966113f4d7d!2z0LzQuNC60YDQvtGA0LDQudC-0L0g0JDQutGB0LDQuS0z0JAgNjLQsCwg0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2s!4v1779356148575!5m2!1sru!2s"
+                loading="lazy"
+              />
+            </div>
             <div className="cart__box-little">
               <div className="cart__box-delivery-info">
                 <img src={images.delivery} alt="" />
-                <p className="cart__box-delivery-text">{t('cart.deliveryInfo')} ↓</p>
+                <p className="cart__box-delivery-text">{t('cart.deliveryInfo')}</p>
               </div>
-              <p className="cart__box-delivery-price">{formatPriceValue(deliveryFee)}</p>
             </div>
           </div>
         </div>
 
-        <div className="cart__total-price">
+        <div className="cart__checkout">
           <div className="cart-box">
             <p className="cart__total-price-title">{t('cart.total')}</p>
             <p className="cart__total-price-value">{formatPriceValue(grandTotal)}</p>
           </div>
-          <Link to='/registration' type="button" className="cart__total-price-btn">{t('cart.buy')}</Link>
+          <Link to="/registration" className="cart__total-price-btn">
+            {t('cart.buy')}
+          </Link>
         </div>
       </div>
       <Footer />

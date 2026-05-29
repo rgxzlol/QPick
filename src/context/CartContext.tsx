@@ -23,6 +23,7 @@ type CartContextType = {
   addToCart: (product: Product) => void
   removeFromCart: (productId: number) => void
   updateQuantity: (productId: number, quantity: number) => void
+  clearCart: () => void
   totalCount: number
   itemsTotal: number
   deliveryFee: number
@@ -69,6 +70,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     setItems((prev) => prev.filter((item) => item.productId !== productId))
   }, [])
 
+  const clearCart = useCallback(() => {
+    setItems([])
+  }, [])
+
   const updateQuantity = useCallback((productId: number, quantity: number) => {
     if (quantity <= 0) {
       setItems((prev) => prev.filter((item) => item.productId !== productId))
@@ -106,6 +111,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       addToCart,
       removeFromCart,
       updateQuantity,
+      clearCart,
       totalCount,
       itemsTotal,
       deliveryFee,
@@ -116,6 +122,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       addToCart,
       removeFromCart,
       updateQuantity,
+      clearCart,
       totalCount,
       itemsTotal,
       deliveryFee,

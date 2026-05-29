@@ -15,7 +15,7 @@ const Main = () => {
                 <h3 className="main__accessories-title">
                     {t('main.accessoriesTitle')}<br /> {t('main.accessoriesModel')}
                 </h3>
-                <img src={phone} alt="iPhone 13 Pro Max" />
+                <img className='main__img' src={phone} alt="iPhone 13 Pro Max" />
             </div>
             <div className="catalog">
                 <div className="catalog__category">

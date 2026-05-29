@@ -49,7 +49,7 @@
 .product-page-button__back {
     position: absolute;
     bottom: 10px;
-    left: 5px;
+    right: 5px;
 }
 
 .product-page__price {

@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    .product-page {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    .product-page-button__back {
+        display: none !important;
+    }
+
+    .product-page-button--cart {
+        margin-bottom: 40px;
+    }
+    .product-page-button {
+        padding: 13px 60px !important;
+    }
+    .terms {
+        gap: 20px !important;
+    }
+}

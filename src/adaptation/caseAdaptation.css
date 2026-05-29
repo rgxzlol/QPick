@@ -1,0 +1,5 @@
+@media (max-width: 370px) {
+    .cases-page__header{
+        flex-direction: column !important;
+    }
+}

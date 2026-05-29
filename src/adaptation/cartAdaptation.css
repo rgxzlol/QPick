@@ -1,0 +1,218 @@
+/* Корзина — планшет и ниже: итого и кнопка на всю ширину */
+@media (max-width: 992px) {
+    .cart {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .cart__box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cart__checkout {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        flex: none;
+        align-self: stretch;
+        margin-top: 0;
+    }
+
+    .cart-box,
+    .cart__total-price-btn {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .cart__geo-box {
+        max-width: 100%;
+    }
+}
+
+/* Корзина — мобилка (макет Figma) */
+@media (max-width: 768px) {
+    .cart {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
+
+    .cart__title--desktop {
+        display: none;
+    }
+
+    .cart__box {
+        gap: 12px;
+        width: 100%;
+    }
+
+    .cart__items {
+        gap: 12px;
+    }
+
+    .cart__box-content {
+        padding: 14px 14px 16px;
+        border-radius: 20px;
+    }
+
+    .cart__box-content-item {
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .cart__box-content-item img {
+        width: 72px;
+        height: auto;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .cart__box-title {
+        font-size: 15px;
+        line-height: 1.3;
+        padding-right: 28px;
+    }
+
+    .cart__box-price {
+        font-size: 14px;
+    }
+
+    .cart__delete {
+        top: 12px;
+        right: 12px;
+        padding: 4px;
+    }
+
+    .cart__delete img {
+        width: 18px;
+        height: auto;
+    }
+
+    .cart__box-info {
+        margin-top: 14px;
+        gap: 8px;
+    }
+
+    .cart__box-count {
+        gap: 16px;
+    }
+
+    .cart__box-count-btn {
+        padding: 7px;
+    }
+
+    .cart__box-count-btn img {
+        width: 12px;
+        height: auto;
+    }
+
+    .cart__box-count-value {
+        font-size: 16px;
+        min-width: 20px;
+        text-align: center;
+    }
+
+    .cart__box-item-total-price {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    /* Доставка */
+    .cart__box-delivery {
+        padding: 14px 16px 16px;
+        border-radius: 20px;
+    }
+
+    .cart__box-delivery-title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .cart__box-delivery-price {
+        font-size: 15px;
+        color: #1c1c27;
+    }
+
+    .cart__geo-box {
+        height: auto;
+        min-height: 120px;
+        aspect-ratio: 16 / 9;
+    }
+
+    .cart__box-little {
+        margin-top: 12px;
+        padding: 12px 14px;
+    }
+
+    .cart__box-delivery-text {
+        font-size: 14px;
+    }
+
+    /* Итого + кнопка */
+    .cart__checkout {
+        width: 100%;
+        gap: 12px;
+        margin-top: 4px;
+    }
+
+    .cart-box {
+        border-radius: 20px;
+        padding: 16px 18px;
+    }
+
+    .cart__total-price-title {
+        font-size: 14px;
+    }
+
+    .cart__total-price-value {
+        font-size: 16px;
+        padding-right: 0;
+    }
+
+    .cart__total-price-btn {
+        padding: 18px 20px;
+        border-radius: 20px;
+        font-size: 17px;
+    }
+
+    /* Пустая корзина */
+    .nullCart {
+        height: 65dvh;
+        padding: 0 16px;
+        margin-top: 14px;
+    }
+
+    .nullCart-title {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+
+    .nullCart-desc {
+        font-size: 16px;
+    }
+
+    .nullCart-btn {
+        font-size: 17px;
+        padding: 16px 32px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .cart__box-content-item img {
+        width: 64px;
+    }
+
+    .cart__box-title {
+        font-size: 14px;
+    }
+}

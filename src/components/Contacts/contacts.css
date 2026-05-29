@@ -8,6 +8,11 @@
     border: none;
 }
 
+.contacts__geo-boxx {
+    width: 724px;
+    height: 424px;
+}
+
 .contacts__geo-box {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     background: #fff;
